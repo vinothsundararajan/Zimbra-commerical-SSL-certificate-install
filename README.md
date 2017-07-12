@@ -31,7 +31,8 @@ The certificate should be contains below files.
 
   cd tmp
  
-  163  ls
+  #ls
+  
   Make certificate directory and copy the 4 files to in it.
    cd certificate/
 

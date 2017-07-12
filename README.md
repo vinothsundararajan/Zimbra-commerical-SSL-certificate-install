@@ -34,13 +34,16 @@ The certificate should be contains below files.
   #ls
   
   Make certificate directory and copy the 4 files to in it.
+  
    cd certificate/
 
   #cat AddTrustExternalCARoot.crt COMODORSAAddTrustCA.crt COMODORSADomainValidationSecureServerCA.crt > /tmp/commercial_ca.crt
+  
   #cp mail_xxxx_com.crt /tmp/commercial.crt
   #cd ..
   #ls
   come back and check the newly created files exist??
+
 
   # [root@mail tmp]# /opt/zimbra/bin/zmcertmgr verifycrt comm /opt/zimbra/ssl/zimbra/commercial/commercial.key /tmp/commercial.crt /tmp/commercial_ca.crt
 #               /opt/zimbra/bin/zmcertmgr deploycrt comm /tmp/commercial.crt /tmp/commercial_ca.crt
